@@ -30,8 +30,8 @@
 - `homeworkIndex = {<作业序号>},`，在花括号内填入作业序号。
 
 ### `style` 设置
-`fontEN = lm | times | default,` ，英语字体选项，选项意思依次为 Latin Modern，Times，以及默认（选择默认时为 `times`）；
-`fontMath = lm | times | default,`，数学字体选项，选项意思依次为 Latin Modern，Times，以及默认（选择默认时为 `lm`）。
+- `fontEN = lm | times | default,` ，英语字体选项，选项意思依次为 Latin Modern，Times，以及默认（选择默认时为 `times`）；
+- `fontMath = lm | times | default,`，数学字体选项，选项意思依次为 Latin Modern，Times，以及默认（选择默认时为 `lm`）。
 
 ## 可选功能
 本模板添加了三个命令：
@@ -41,6 +41,7 @@
 \Subsubsection[<标题正文>]{<标题序号>}
 ```
 可以用来临时更改一个标题的序号。
+
 该命令同样会使计数器 `section`、`subsection` 或 `subsubsection` 递增。
 
 ## 文档中使用的宏包
