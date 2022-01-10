@@ -3,7 +3,9 @@
 `labreport.cls`。
 ## 使用方法
 直接将其放入文档的根目录，随后在待编译的 `.tex` 的导言区内导入文档类
+
 `\documentclass{homework}`
+
 注意：使用本模版后只可以用 XeTeX 编译。
 ## 设置方法
 ### 设置格式
@@ -45,17 +47,17 @@
 该命令同样会使计数器 `section`、`subsection` 或 `subsubsection` 递增。
 
 ## 文档中使用的宏包
-geometry
-amsmath
-amssymb
-unicode-math
-xcolor
-listings
-caption
-graphicx
-fancyhdr
-lastpage
-enumitem
+- geometry
+- amsmath
+- amssymb
+- unicode-math
+- xcolor
+- listings
+- caption
+- graphicx
+- fancyhdr
+- lastpage
+- enumitem
 
 ## 关于
 本模板由 Koyamin 的[华东师范大学计算机科学与技术系实验报告](https://github.com/Koyamin/labreport-cs)改编。
