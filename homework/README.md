@@ -3,7 +3,7 @@
 `labreport.cls`。
 ## 使用方法
 直接将其放入文档的根目录，随后在待编译的 `.tex` 的导言区内导入文档类
-`\documentclass{labreport}`
+`\documentclass{homework}`
 注意：使用本模版后只可以用 XeTeX 编译。
 ## 设置方法
 ### 设置格式
@@ -23,10 +23,10 @@
 
 ### `info`设置
 
-- `courseName  = {<课程名称>},`，在花括号内填入课程名称；
-- `teacherName = {<指导教师>},`，在花括号内填入指导教师；
-- `studentID   = {<学号>},`，在花括号内填入学号；
-- `name        = {<姓名>},`，在花括号内填入姓名；
+- `courseName    = {<课程名称>},`，在花括号内填入课程名称；
+- `teacherName   = {<指导教师>},`，在花括号内填入指导教师；
+- `studentID     = {<学号>},`，在花括号内填入学号；
+- `name          = {<姓名>},`，在花括号内填入姓名；
 - `homeworkIndex = {<作业序号>},`，在花括号内填入作业序号。
 
 ### `style` 设置
