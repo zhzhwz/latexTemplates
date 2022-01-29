@@ -1,9 +1,6 @@
 \NeedsTeXFormat{LaTeX2e}
 \RequirePackage{expl3}
-\GetIdInfo $Id: homework.cls 0.1 2022-01-10 12:00:00Z zhzhwz $
-  {Template for writing your homework in tex}
-\ProvidesExplClass{\ExplFileName}
-  {\ExplFileDate}{\ExplFileVersion}{\ExplFileDescription}
+\ProvidesExplClass{homework}{2022/1/29}{0.2}{Template for writing homework in LaTeX2e}
 
 % 判断系统信息
 \msg_new:nnn { homework } { engine-unsupportd } 
