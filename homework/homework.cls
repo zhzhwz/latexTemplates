@@ -21,34 +21,10 @@
   { ctexart }
 \LoadClass { ctexart }
 
-%设置标题格式
-\ctexset{section = {format={\Large\bfseries}}}
-\renewcommand{\thesection}{\arabic{section}}
-\newcommand{\Section}[2][]{
-    \renewcommand\thesection{#2}
-    \section{#1}
-    \renewcommand\thesection{\arabic{section}}
-}
-
-\renewcommand{\thesubsection}{(\arabic{subsection})}
-\newcommand{\Subsection}[2][]{
-    \renewcommand\thesubsection{#2}
-    \subsection{#1}
-    \renewcommand\thesubsection{(\arabic{subsection})}
-}
-
-\renewcommand{\thesubsubsection}{\alph{subsubsection}}
-\newcommand{\Subsubsection}[2][]{
-    \renewcommand\thesubsubsection{#2}
-    \subsubsection{#1}
-    \renewcommand\thesubsubsection{\alph{subsubsection}}
-}
-
 % 声明文档信息所需变量
 \clist_map_inline:nn
   {
-    courseName, teacherName, labName, labNo, studentID, name, grade, 
-    groupNo, date, time
+    courseName, teacherName, studentID, name, grade, homeworkIndex
   }
   { \tl_new:c { l__homework_info_ #1 _tl } }
 \clist_new:N \l__homework_info_keywords_clist
@@ -224,6 +200,56 @@
   {
     fontEN      = times,
     fontMath    = lm,
+  }
+
+%定义标题样式
+\tl_const:Nn \c_homework_section_format { \arabic{section} }
+\tl_const:Nn \c_homework_subsection_format { (\arabic{subsection}) }
+\tl_const:Nn \c_homework_subsubsection_format { \alph{subsubsection} }
+
+%设置标题格式
+\ctexset{section = {format={\Large\bfseries}}}
+\renewcommand\thesection{\c_homework_section_format}
+\renewcommand\thesubsection{\c_homework_subsection_format}
+\renewcommand\thesubsubsection{\c_homework_subsubsection_format}
+
+\NewDocumentCommand \Section { o m }
+  {
+    \IfNoValueTF {#1}
+      {
+        \section{#2}
+      }
+      {
+        \renewcommand\thesection{#1}
+        \section{#2}
+        \renewcommand\thesection{\c_homework_section_format}
+      }
+  }
+
+\NewDocumentCommand \Subsection { o m }
+  {
+    \IfNoValueTF {#1}
+      {
+        \subsection{#2}
+      }
+      {
+        \renewcommand\thesubsection{#1}
+        \subsection{#2}
+        \renewcommand\thesubsection{\c_homework_subsection_format}
+      }
+  }
+
+\NewDocumentCommand \Subsubsection { o m }
+  {
+    \IfNoValueTF {#1}
+      {
+        \subsubsection{#2}
+      }
+      {
+        \renewcommand\thesubsubsection{#1}
+        \subsubsection{#2}
+        \renewcommand\thesubsubsection{\c_homework_subsubsection_format}
+      }
   }
 
 \definecolor { colorKeyword     } { RGB } {  86,156,214 }
