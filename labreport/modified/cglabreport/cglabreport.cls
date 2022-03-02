@@ -1,7 +1,7 @@
 \NeedsTeXFormat{LaTeX2e}
 \RequirePackage{expl3}
 \GetIdInfo $Id: cglabreport.cls 0.1 2022-03-01 12:00:00Z zhzhwz $
-  {Template for Undergraduate Lab Report of Computer Science, East China Normal University}
+  {Template for Undergraduate Lab Report in Computer Graphics of Computer Science, East China Normal University}
 \ProvidesExplClass{\ExplFileName}
   {\ExplFileDate}{\ExplFileVersion}{\ExplFileDescription}
 
