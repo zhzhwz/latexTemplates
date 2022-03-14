@@ -77,13 +77,13 @@
   \fancyhead[L]     { \small \l__homework_info_studentID_tl \l__homework_info_name_tl}
   \fancyhead[C]     { \small \l__homework_info_courseName_tl }
   \fancyhead[R]     { \small \l__homework_info_homeworkIndex_tl }
-  \fancyfoot[C]     { \small 第\ \thepage\ 页\quad 共\ \pageref{LastPage}\ 页  }
+  \fancyfoot[C]     { \small 第\ \thepage\ 页\quad 共\ \pageref*{LastPage}\ 页  }
   \fancyfoot[L,R]   { }
   \headheight   = 13 pt 
 \fancypagestyle{plain} 
   {
     \fancyhf        { }
-    \fancyfoot[C]   {\small 第\ \thepage\ 页\quad 共\ \pageref{LastPage}\ 页 }
+    \fancyfoot[C]   {\small 第\ \thepage\ 页\quad 共\ \pageref*{LastPage}\ 页 }
     \fancyfoot[L,R] { }
     \footskip = 30pt
     \renewcommand   { \headrulewidth } { 0 pt }

@@ -3,6 +3,7 @@
 ## 声明
 
 Fork 自 Koyamin 的[华东师范大学计算机科学与技术系实验报告](https://github.com/Koyamin/labreport-cs)。
+修改：`\pageref`&rarr;`pageref*`。
 
 ## 目的
 
