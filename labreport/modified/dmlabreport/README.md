@@ -1,4 +1,4 @@
-# cglabreport
+# dmlabreport
 
 ## 更改
 
@@ -6,7 +6,7 @@
 
 ## `info`设置
 
-使用 `\cglabreportSetup` 命令。
+使用 `\dmlabreportSetup` 命令。
 
 - `courseName  = {<课程名称>},`，在花括号内填入课程名称；
 - `teacherName = {<指导教师>},`，在花括号内填入指导教师；
