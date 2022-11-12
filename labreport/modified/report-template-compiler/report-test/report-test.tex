@@ -1,0 +1,53 @@
+\documentclass{ctlabreport}
+
+\ctlabreportSetup {
+info = {
+    projectName = {(项目名)},
+    authorName = {作者名},
+    version = {1.0},
+    date = {\today},
+}}
+
+\begin{document}
+\section{概述}
+
+\subsection{测试描述}
+
+\subsection{测试环境}
+
+\section{测试用例描述}
+
+\subsection{}
+
+\subsubsection{测试目标}
+
+测试 \lstinline|gcd| 是否正常工作。
+
+\subsubsection{测试用例的源程序}
+
+\begin{lstlisting}[language=C]
+{
+    int x;
+    int y;
+    int z;
+    read x;
+    read y;
+    z = gcd(x, y);
+    write z;
+}
+\end{lstlisting}
+
+\subsubsection{测试步骤}
+
+\begin{enumerate}
+    \item 你先这样
+    \item 然后这样
+    \item 最后这样
+    \item 懂了吗
+\end{enumerate}
+
+\subsubsection{测试结果}
+
+挺好的
+
+\end{document}
