@@ -1,3 +1,4 @@
 # latexTemplates
-latex templates for homework, lab report, presentation slides, etc.
-suitable for ecnu cs students.
+Latex templates for homework, lab report, presentation slides, etc.
+
+Suitable for ecnu cs students.
